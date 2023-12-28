@@ -1,0 +1,106 @@
+.banner {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 75vh;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 1vmax;
+    overflow: hidden;
+    position: relative; /* Add this line to make positioning work properly */
+}
+
+#santa {
+    position: absolute;
+    animation: fly 15s linear infinite;
+    width: 300px; /* Adjust the size as needed */
+    z-index: 100;
+    bottom: 10%; /* Adjust the vertical position as needed */
+    right: 50%; /* Adjust the horizontal position as needed */
+}
+
+@keyframes fly {
+    0% {
+        transform: rotateZ(0deg) translate(100vw, -30vh) scale(1);
+    }
+    100% {
+        transform: rotateZ(90deg) translate(-10vw, -30vh) scale(1.5);
+    }
+}
+
+#scene {
+    text-align: center;
+    height: 100%;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.background img,
+.snow img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.snow > * {
+    margin-left: -20vw;
+    transform: scale(2);
+}
+
+.snow.back {
+    margin-top: 70vh;
+}
+
+.snow.front {
+    margin-top: 83vh;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0%, -50%);
+    z-index: 2;
+}
+
+.banner-text h1{
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.banner-text h2{
+    font-weight: 36px;
+    color: white;
+}
+
+.banner-text button {
+    background-color: black;
+    color: lightblue;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    font-size: 12px;
+    padding: 5px;
+    width: 120px;
+}
+
+.banner-text p{
+    font-size: 12px;
+    font-weight: bold;
+}
+

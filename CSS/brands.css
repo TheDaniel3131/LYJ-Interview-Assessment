@@ -1,0 +1,28 @@
+        .brands-section {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 25vh; 
+        }
+
+        .brands {
+            text-align: center;
+        }
+
+        .brand {
+            display: inline-block;
+            margin: 10px; 
+        }
+        /* Media query for smaller screen sizes */
+        @media (max-width: 768px) {
+            .brands-section {
+                height: auto;
+            }
+
+            .brand {
+                margin: 5px;
+            }
+        }

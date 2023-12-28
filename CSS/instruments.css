@@ -1,0 +1,62 @@
+
+        .instruments {
+            padding: 10px 0;
+            margin-bottom: 25px;
+        }
+
+        .instruments h2 {
+            color: #ff1a50;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            text-align: center;
+            
+        }
+
+        .instruments h1 {
+            color: #000000;
+            text-transform: uppercase;
+            font-size: 2em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .icon-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            width: 45%;
+            margin: 0 2.5%;
+        }
+
+        .list-item {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .list-item:hover {
+            transform: scale(1.05);
+        }
+
+        .instruments img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .instruments h3 {
+            color: #000000;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+       .instruments p {
+            color: #666666;
+            font-size: 1em;
+            line-height: 1.5;
+        }
